@@ -1,0 +1,24 @@
+{
+  "name": "hospital-management-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CarePlus Hospital Management System (React, Express, MongoDB) - Vercel deployment layout",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev:server": "nodemon server/server.js",
+    "dev:client": "npm --prefix client run dev",
+    "seed": "node server/seed.js",
+    "build": "npm --prefix client install --include=dev && npm --prefix client run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.1"
+  }
+}
